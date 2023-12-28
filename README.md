@@ -2,7 +2,7 @@
     <img alt="fossunited logo" src="assets/fossclub_logo_dark.svg" width="150px" height="120px">
 </div>
 
-## FOSS Club Logo Generator
+## FOSS Clubs Logo Generator
 
 This is a logo generator for FOSS Clubs, an initiative by FOSS United to promote free and open-source culture and collaboration among students on college campuses. 
 
