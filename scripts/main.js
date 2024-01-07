@@ -57,7 +57,7 @@ function triggerDownload(imgURI) {
 
     var a = document.createElement('a');
     var str = document.getElementById('collegeName').value;
-    a.setAttribute('download', "TinkerHub_".concat(str).concat(`.${format.toLowerCase()}`));
+    a.setAttribute('download', "FOSS United_".concat(str).concat(`.${format.toLowerCase()}`));
     a.setAttribute('href', imgURI);
     a.setAttribute('target', '_blank');
     a.dispatchEvent(evt);
