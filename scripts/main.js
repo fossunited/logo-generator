@@ -40,7 +40,6 @@ document.getElementById('toggleColor').addEventListener('click', function (evt) 
         document.getElementById("toggleColor").classList.remove('btn-light');
         document.getElementById("toggleColor").classList.add('btn-dark');
     }
-    console.log('color >>', svg.style.fill)
     color = svg.style.fill;
 })
 
