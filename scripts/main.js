@@ -9,23 +9,38 @@ var format = "SVG";
 // Add click event to theme toggle button
 document.getElementById('toggleColor').addEventListener('click', function (evt) {
     var cardTemplate = document.querySelector(".card")
-    // Check current state
+    var foss = document.getElementById('FossClub')
+    var logoName = document.getElementById('logoName')
+    var topLeft = document.getElementById('topLeft')
+    var bottomRight = document.getElementById('bottomRight')
+
+    // DARK
     if (evt.target.innerHTML === "Dark Theme") {
-        svg.style.fill = "white";
+        svg.style.fill = "black";
         cardTemplate.style.backgroundColor = "#191919";
         cardTemplate.firstElementChild.style.color = "white";
+        foss.style.fill='white'
+        logoName.style.fill = 'white'
+        topLeft.style.fill = 'white'
+        bottomRight.style.fill = 'white'
         evt.target.innerHTML = "Light Theme";
         document.getElementById("toggleColor").classList.remove('btn-dark');
         document.getElementById("toggleColor").classList.add('btn-light');
-    } else {
-        svg.style.fill = "black";
+    } 
+    // LIGHT
+    else {
+        svg.style.fill = "white";
         cardTemplate.style.backgroundColor = "white";
-        cardTemplate.firstElementChild.style.color = "#6c757d ";
+        cardTemplate.firstElementChild.style.color = "#6c757d";
+        foss.style.fill = "black"
+        topLeft.style.fill = 'black'
+        logoName.style.fill = 'black'
+        bottomRight.style.fill = 'black'
         evt.target.innerHTML = "Dark Theme";
         document.getElementById("toggleColor").classList.remove('btn-light');
         document.getElementById("toggleColor").classList.add('btn-dark');
     }
-
+    console.log('color >>', svg.style.fill)
     color = svg.style.fill;
 })
 
@@ -69,7 +84,7 @@ document.getElementById("downloadForm").addEventListener('submit', function(even
     event.preventDefault();
     changeCollegeName();
 
-    var openTag = `<svg id="svgLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2028 594" width="2028" height="594" style="fill: ${color};">`;
+    var openTag = `<svg id="svgLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2028 594" width="2028" height="594" style="background-color: ${color};">`;
     var closeTag = '</svg>';
     var blob = new Blob([`${openTag}${svg.innerHTML}${closeTag}`], {type: "image/svg+xml"});  
     var blobURL = window.URL.createObjectURL(blob);
