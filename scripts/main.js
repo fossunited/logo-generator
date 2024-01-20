@@ -14,7 +14,7 @@ document.getElementById('toggleColor').addEventListener('click', function (evt) 
     var topLeft = document.getElementById('topLeft')
     var bottomRight = document.getElementById('bottomRight')
 
-    // DARK
+    // DARK MODE
     if (evt.target.innerHTML === "Dark Theme") {
         svg.style.fill = "black";
         cardTemplate.style.backgroundColor = "#191919";
@@ -23,11 +23,13 @@ document.getElementById('toggleColor').addEventListener('click', function (evt) 
         logoName.style.fill = 'white'
         topLeft.style.fill = 'white'
         bottomRight.style.fill = 'white'
+        topRight.style.fill = '#C8C7C7'
+        bottomLeft.style.fill = '#C8C7C7'
         evt.target.innerHTML = "Light Theme";
         document.getElementById("toggleColor").classList.remove('btn-dark');
         document.getElementById("toggleColor").classList.add('btn-light');
     } 
-    // LIGHT
+    // LIGHT MODE
     else {
         svg.style.fill = "white";
         cardTemplate.style.backgroundColor = "white";
@@ -36,6 +38,8 @@ document.getElementById('toggleColor').addEventListener('click', function (evt) 
         topLeft.style.fill = 'black'
         logoName.style.fill = 'black'
         bottomRight.style.fill = 'black'
+        topRight.style.fill = '#22B34F'
+        bottomLeft.style.fill = '#22B34F'
         evt.target.innerHTML = "Dark Theme";
         document.getElementById("toggleColor").classList.remove('btn-light');
         document.getElementById("toggleColor").classList.add('btn-dark');
