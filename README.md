@@ -14,6 +14,14 @@ Edits are made in the SVG version of logos and then saved.
 
 The generated logos can be used in social media posts, videos, and other design collateral created by FOSS Clubs. Contributing to the project makes you a part of it. 
 
+
+## How To Run
+
+1. Clone this repo
+
+2. Open the index.html file using your browser.
+
+
 ## Credits
 
 This logo generator is inspired by the [TinkerHub's Campus Logo Generator](https://github.com/tinkerhub/campus-logo-generator).
