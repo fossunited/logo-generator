@@ -2,26 +2,68 @@ body {
   font-family: 'Inter', sans-serif !important;
 }
 
+.lg-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.lg-input {
+  font-size: 1.5rem;
+  border-radius: 0.45rem !important;
+  width: 30rem !important;
+}
+
 .bg-light-white {
   background-color: #f3f3f3;
 }
 
 .social-icon {
-  color: #3b568d;
+  color: #1a1a1a;
   text-decoration: none !important;
 }
 
 .text-blue {
-  color: #14599f;
+  color: #1a1a1a;
+}
+
+.btn{
+  width: fit-content !important;
 }
 
 .btn-primary {
   color: white !important;
-  background-color: #14599f !important;
+  background-color: #08B74F !important;
+  border-color: #08B74F !important;
 }
 
 .btn-primary:hover {
-  background-color: #3b568d !important;
+  background-color: #0cb44f !important;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+  transform: translateX(65%);
+  min-width: 100%;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  border-bottom: 1px solid #e9ecef !important;
+}
+.dropdown-item:focus {
+  background-color: #f8f9fae3 !important;
+}
+.dropdown-item:active {
+  background-color: #f8f9fa !important;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
 }
 
 #svgLogo {
@@ -46,3 +88,42 @@ body {
 svg {
   transition: 0.5s;
 }
+
+/* Add these styles to your existing CSS */
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #f3f3f3;
+}
+
+body.dark-theme .card {
+    background-color: #2c2c2c;
+    border-color: #444;
+}
+
+body.dark-theme .text-blue {
+    color: #f3f3f3;
+}
+
+body.dark-theme .btn-primary {
+    background-color: #0cb44f !important;
+    border-color: #0cb44f !important;
+}
+
+body.dark-theme .dropdown-menu {
+    background-color: #2c2c2c;
+}
+
+body.dark-theme .dropdown-item {
+    color: #f3f3f3;
+    border-bottom-color: #444 !important;
+}
+
+body.dark-theme .dropdown-item:hover,
+body.dark-theme .dropdown-item:focus,
+body.dark-theme .dropdown-item:active {
+    background-color: #3a3a3a !important;
+}
+
+

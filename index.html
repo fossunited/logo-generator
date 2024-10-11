@@ -26,17 +26,14 @@
                 A logo generator for FOSS Clubs.
             </p>
             <br>
+            <br>
 
-            <form class="form-group row" id="downloadForm">
-                <div class="col-md-2"></div>
-                <div class="col-md-4">
-                    <input type="text" id="collegeName" class="form-control mb-2 mb-md-0"
+            <form class="text-center lg-header" id="downloadForm">
+                <div>
+                    <input type="text" id="collegeName" class="form-control mb-2 mb-md-0 lg-input"
                         placeholder="Enter your college name here" required>
                 </div>
-                <div class="col-md-3">
-                    <button type="button" id="toggleColor" class="btn btn-block btn-dark shadow-sm">Dark Theme</button>
-                </div>
-                <div class="col-md-3 btn-group showable">
+                <div class="col-md-3 btn-group showable" id="downloadForm">
                     <input type="submit" class="btn btn-block btn-primary shadow-sm" id="myBtn" value="Download SVG" />
 
                     <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
@@ -48,12 +45,14 @@
                         <a class="dropdown-item" onclick="setFormat(this.innerText)">PNG</a>
                     </div>
                 </div>
-                <div class="col-md-2"></div>
             </form>
-            <br>
 
-            <div class="card card-body shadow-sm border-0">
-                <div class="text-sm preview-text">PREVIEW</div>
+            <div class="card card-body shadow-sm border-3 position-relative">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-sm preview-text" id="previewText">PREVIEW</div>
+                    <button type="button" id="toggleColor" class="btn btn-block btn-dark shadow-sm">Switch to Dark</button>
+                </div>
+                
                 <div class="text-center py-4">
                     <!-- FOSS LOGO SVG -->
                     <!-- <svg width="746" height="372" viewBox="0 0 746 372" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
